@@ -104,8 +104,8 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
  [João Paulo Papa](https://papajpblog.wordpress.com/) <br>
  UNESP Bauru
   
-<img src='images/nerf_ship.jpeg'/>
-<img src='images/BioNeRF.jpeg'/>
+<img src='https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/nerf_ship.jpeg'/>
+<img src='https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/BioNeRF.jpeg'/>
 
 
 ## Citation
