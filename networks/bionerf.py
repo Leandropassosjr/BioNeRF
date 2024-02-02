@@ -20,6 +20,9 @@ class BiologicallyPlausibleNerfModel(nn.Module):
                                     nn.Linear(W, 1), )
         
         
+
+        self.f_o = nn.Linear(W, W)
+        self.f_d = nn.Linear(W, W)
         self.pre_mod = nn.Linear(W*2, W)
         self.f_mem_o = nn.Linear(W*2, W)
         self.f_mem_d = nn.Linear(W*2, W)
@@ -48,8 +51,8 @@ class BiologicallyPlausibleNerfModel(nn.Module):
 
 
         # memory
-        f_o = torch.sigmoid(h_o)
-        f_d = torch.sigmoid(h_d)
+        f_o = torch.sigmoid(self.f_o(h_o))
+        f_d = torch.sigmoid(self.f_d(h_d))
         h_o_h_d = torch.cat((h_o, h_d), dim=1)
         pre_mod = torch.tanh(self.pre_mod(h_o_h_d))
         
