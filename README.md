@@ -86,16 +86,16 @@ python run_bionerf.py --config configs/{DATASET}.txt --render_only --render_test
 
 replace `{DATASET}` with `trex` | `horns` | `flower` | `fortress` | `lego` | etc.
 
-### Pre-trained Models
-
-You can download the pre-trained models [here](https://drive.google.com/drive/folders/1oOVRMq3EJ3q4pZcbeuoiCuh1zrdiRb85?usp=drive_link). Place the downloaded directory in `./logs` in order to test it later. See the following directory structure for an example:
-
-```
-├── logs 
-│   ├── fern_test
-│   ├── flower_test  # downloaded logs
-│   ├── trex_test    # downloaded logs
-```
+%### Pre-trained Models
+%
+%You can download the pre-trained models [here](https://drive.google.com/drive/folders/1oOVRMq3EJ3q4pZcbeuoiCuh1zrdiRb85?usp=drive_link). Place the downloaded directory in `./logs` in order to test it later. See the following directory %structure for an example:
+%
+%```
+%├── logs 
+%│   ├── fern_test
+%│   ├── flower_test  # downloaded logs
+%│   ├── trex_test    # downloaded logs
+%```
 
 ## Method
 
