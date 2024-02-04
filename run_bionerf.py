@@ -666,9 +666,10 @@ def train():
             if args.generate_samples:
 
                 if testsavedir is not None:
-                    rgb8 = to8b(rgbs[-1])
-                    filename = os.path.join(testsavedir, '{:03d}.png'.format(i))
-                    imageio.imwrite(filename, rgb8)
+                    for i, c2w in enumerate(tqdm(render_poses)):
+                        rgb8 = to8b(rgbs[-1])
+                        filename = os.path.join(testsavedir, '{:03d}.png'.format(i))
+                        imageio.imwrite(filename, rgb8)
 
             if args.compute_metrics:
                 rgbs = torch.from_numpy(rgbs.astype('float'))
