@@ -11,7 +11,7 @@ This code is based on a PyTorch implementation of [NeRF](https://github.com/yenc
 
 ```
 git clone https://github.com/Leandropassosjr/BioNeRF.git
-cd nerf-pytorch
+cd BioNeRF
 pip install -r requirements.txt
 ```
 
