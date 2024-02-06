@@ -12,7 +12,7 @@ This code is based on a PyTorch implementation of [NeRF](https://github.com/yenc
 ```
 git clone https://github.com/Leandropassosjr/BioNeRF.git
 cd nerf-pytorch
-pip install -r requirements.txt # Danilão, pode me ajudar com esse requirements????
+pip install -r requirements.txt
 ```
 
 <details>
