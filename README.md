@@ -19,13 +19,18 @@ pip install -r requirements.txt # Danilão, pode me ajudar com esse requirements
   <summary> Dependencies (click to expand) </summary>
   
   ## Dependencies
-  - PyTorch 1.4
-  - matplotlib
   - numpy
+  - torch
+  - torchvision
   - imageio
-  - imageio-ffmpeg
+  - imageio
+  - matplotlib
   - configargparse
-  - Verificar como encontrar as dependências
+  - tensorboard
+  - tqdm
+  - opencv-python
+  - torchmetrics
+
 
   
 The LLFF data loader requires ImageMagick.
