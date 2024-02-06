@@ -1,0 +1,11 @@
+numpy==1.26.4
+torch==2.2.0
+torchvision==0.17.0
+imageio==2.33.1
+imageio-ffmpeg==0.4.9
+matplotlib==3.8.2
+configargparse==1.7
+tensorboard==2.15.1
+tqdm==4.66.1
+opencv-python==4.9.0.80
+torchmetrics>=1.2.0
