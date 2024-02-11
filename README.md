@@ -5,6 +5,7 @@
 
 ![](https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/gifs.gif)
 
+
 This code is based on a PyTorch implementation of [NeRF](https://github.com/yenchenlin/nerf-pytorch).
 
 ## Installation
@@ -30,7 +31,6 @@ pip install -r requirements.txt
   - tqdm
   - opencv-python
   - torchmetrics
-
 
   
 The LLFF data loader requires ImageMagick.
