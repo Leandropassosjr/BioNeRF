@@ -5,6 +5,17 @@
 
 ![](assets/gifs.gif)
 
+Code release for:
+
+> __BioNeRF: Eiologically Plausible Neural Radiance Fields__
+>
+> [Leandro A. Passos](https://orcid.org/0000-0003-3529-3109), Douglas Rodrigues, Danilo Jodas, Kelton A. P. Costa, [João Paulo Papa](https://papajpblog.wordpress.com/)
+
+:newspaper: [Paper](https://arxiv.org/pdf/2402.07310.pdf)
+
+
+<img src="assets/dozer.png" alt="nerfstudio" width="50"/>[Integration with NerfStudio for easier visualization and development](https://github.com/Leandropassosjr/ns_bionerf)
+
 
 This code is based on a PyTorch implementation of [NeRF](https://github.com/yenchenlin/nerf-pytorch).
 
@@ -104,15 +115,6 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 
 ## Method
 
-[BioNeRF: Biologically-plausible NeRF for View Synthesis](http://link.com)  
- [Leandro Passos](https://orcid.org/0000-0003-3529-3109),
- [Douglas Rodrigues](xxx),
- [Danilo Jodas](zzz),
- [Kelton Pontara](xxx),
- [João Paulo Papa](https://papajpblog.wordpress.com/) <br>
- UNESP Bauru
-
-## Pipeline
 <img src='assets/BioNeRF.png'/>
 
 Here is an overview pipeline for BioNeRF, we will walk through each component in this guide.
