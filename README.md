@@ -113,7 +113,7 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
  UNESP Bauru
 
 ## Pipeline
-<img src='https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/BioNeRF.png'/>
+<img src='assets/BioNeRF.png'/>
 
 Here is an overview pipeline for BioNeRF, we will walk through each component in this guide.
 
