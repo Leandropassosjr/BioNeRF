@@ -129,8 +129,6 @@ Updating the memory requires the implementation of a mechanism capable of oblite
 ### Contextual Inference
 This step is responsible for adding contextual information to BioNeRF. Two new embeddings are generate, i.e., **${h}^{\prime}_\Delta$** and **${h}^{\prime}_c$** based on density and color filters, respectively (Step 4 in the figure), which further feed two neural models, i.e., $M^\prime_\Delta$ and $M^{\prime}$. Subsequently, $M^{\prime}_\Delta$ outputs the volume density, while color information is predicted by $M^{\prime}_c$, further used to compute the final predicted pixel information and the loss function.
 
-
-
 ## Citation
 ```
 @article{passos2024bionerf,
