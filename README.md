@@ -7,7 +7,7 @@
 
 Code release for:
 
-> __BioNeRF: Eiologically Plausible Neural Radiance Fields__
+> __BioNeRF: Biologically Plausible Neural Radiance Fields__
 >
 > [Leandro A. Passos](https://orcid.org/0000-0003-3529-3109), Douglas Rodrigues, Danilo Jodas, Kelton A. P. Costa, [João Paulo Papa](https://papajpblog.wordpress.com/)
 
