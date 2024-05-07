@@ -5,7 +5,6 @@
 
 ![](assets/gifs.gif)
 
-
 Code release for:
 
 > __BioNeRF: Eiologically Plausible Neural Radiance Fields__
@@ -16,9 +15,6 @@ Code release for:
 
 
 <img src="assets/dozer.png" alt="nerfstudio" width="50"/>[Integration with NerfStudio for easier visualization and development](https://github.com/Leandropassosjr/ns_bionerf)
-
-
-
 
 
 This code is based on a PyTorch implementation of [NeRF](https://github.com/yenchenlin/nerf-pytorch).
@@ -84,7 +80,7 @@ python run_bionerf.py --config configs/ship.txt
 After training you can find the following video at `logs/blender_paper_ship/blender_paper_ship_spiral_400000_rgb.mp4`.
 
 ![](images/ship.gif)
-<img src="https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/ship.gif" width="100" height="100">
+<img src="assets/ship.gif" width="100" height="100">
 
 ---
 
@@ -118,6 +114,7 @@ You can download the pre-trained models [here](https://drive.google.com/drive/fo
 ```
 
 ## Method
+
 <img src='assets/BioNeRF.png'/>
 
 Here is an overview pipeline for BioNeRF, we will walk through each component in this guide.
