@@ -69,7 +69,7 @@ python run_bionerf.py --config configs/ship.txt
 After training you can find the following video at `logs/blender_paper_ship/blender_paper_ship_spiral_400000_rgb.mp4`.
 
 ![](images/ship.gif)
-<img src="https://github.com/Leandropassosjr/BioNeRF/blob/dev/images/ship.gif" width="100" height="100">
+<img src="assets/ship.gif" width="100" height="100">
 
 ---
 
