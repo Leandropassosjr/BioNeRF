@@ -27,9 +27,9 @@ twitter_username: leandropassosjr
 github_username:  leandropassosjr
 
 # Build settings
-theme: jekyll-theme-CAYMAN
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Exclude from processing.
 # The following items will not be processed, by default.
