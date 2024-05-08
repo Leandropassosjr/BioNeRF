@@ -27,7 +27,7 @@ twitter_username: leandropassosjr
 github_username:  leandropassosjr
 
 # Build settings
-theme: jekyll-theme-Cayman
+theme: jekyll-theme-CAYMAN
 plugins:
   - jekyll-feed
 
