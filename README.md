@@ -11,9 +11,9 @@ Code release for:
 
 > __BioNeRF: Biologically Plausible Neural Radiance Fields__
 >
-> [Leandro A. Passos](https://orcid.org/0000-0003-3529-3109), Douglas Rodrigues, Danilo Jodas, Kelton A. P. Costa, [João Paulo Papa](https://papajpblog.wordpress.com/)
+> [Leandro A. Passos](https://leandropassosjr.github.io/personal/), Douglas Rodrigues, Danilo Jodas, Kelton A. P. Costa, [João Paulo Papa](https://papajpblog.wordpress.com/)
 
-:rocket: [Project page](https://sarafridov.github.io/K-Planes)
+:rocket: [Project page](https://leandropassosjr.github.io/BioNeRF/)
 
 :newspaper: [Paper](https://arxiv.org/pdf/2402.07310.pdf)
 
