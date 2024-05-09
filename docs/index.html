@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>BioNeRF: Biologically Plausible Neural Radiance Fields for View Synthesis</title>
+  <link rel="icon" type="image/x-icon" href="static/images/bionerf.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">BioNeRF: Biologically Plausible Neural Radiance Fields for View Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://leandropassosjr.github.io/personal/" target="_blank">Leandro A. Passos</a>,</span>
+                <span class="author-block">
+                  Douglas Rodrigues,
+                </span>
+                  <span class="author-block">
+                    Danilo Jodas,
+                  </span>
+                  <span class="author-block">
+                    Kelton A.P. Costa,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://papajpblog.wordpress.com/" target="_blank">João Paulo Papa</a>
+                  </span>
+                  </div>
+
+                  <!--
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">São Paulo State University - UNESP<br>Conferance name and year</span>
+                  </div>
+                  -->
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">São Paulo State University - UNESP</span>
+                  </div>
+                  
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2402.07310" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Github link -->
+                    <span class="link-block">
+                      <a href="https://github.com/Leandropassosjr/BioNeRF" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                    <!-- Nerfstudio add-on code -->
+                    <span class="link-block">
+                      <a href="https://github.com/Leandropassosjr/ns_bionerf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <img src="static/images/dozer.png" alt="nerfstudio" width="50"/>
+                      </span>
+                      <span>Nerfstudio add-on Code</span>
+                    </a>
+                  </span>
+
+
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2402.07310" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <!-- Your image here -->
+        <img src="static/images/gifs.gif" alt="Poster BioNeRF" class="center-image">
+    </div>
+  </div>
+  <h2 class="subtitle has-text-centered">
+    View samples from LLFF dataset generated through <b>BioNeRF</b>. 
+  </h2>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present BioNeRF, a biologically plausible architecture that models scenes in a 3D representation and synthesizes new views through radiance fields. Since NeRF relies on the network weights to store the scene's 3-dimensional representation, BioNeRF implements a cognitive-inspired mechanism that fuses inputs from multiple sources into a memory-like structure, improving the storing capacity and extracting more intrinsic and correlated information. BioNeRF also mimics a behavior observed in pyramidal cells concerning contextual information, in which the memory is provided as the context and combined with the inputs of two subsequent neural models, one responsible for producing the volumetric densities and the other the colors used to render the scene. Experimental results show that BioNeRF outperforms state-of-the-art results concerning a quality measure that encodes human perception in two datasets: real-world images and synthetic data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Pipeline</h2>
+          <div class="level-set has-text-justified">
+            <img src="static/images/BioNeRF.png" alt="Pipeline" class="center-image">
+            <p>
+              Here is an overview pipeline for BioNeRF, we will walk through each component in this guide.
+            </p>
+          </div>
+          <h2 class="title is-5">Positional Feature Extraction</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              The first step consists of feeding two neural models simultaneously, namely <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="0"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em; margin-left: -0.081em;"><mjx-texatom size="s"><mjx-mi class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>M</mi><mrow data-mjx-texclass="ORD"><mi mathvariant="normal">Δ</mi></mrow></msub></math></mjx-assistive-mml></mjx-container></math-renderer> and <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="1"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.081em;"><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>M</mi><mi>c</mi></msub></math></mjx-assistive-mml></mjx-container></math-renderer>, with the camera positional information. The output of these models encodes the positional information from the input image. Although the input is the same, the neural models do not share weights and follow a different flow in the next steps.
+            </p>
+          </div>
+          <h2 class="title is-5">Cognitive Filtering</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              This step performs a series of operations, called <em>filters</em>, that work on the embeddings coming from the previous step. There are four filters this step derives: density, color, memory, and modulation.
+            </p>
+          </div>
+          <h2 class="title is-5">Memory Updating</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Updating the memory requires the implementation of a mechanism capable of obliterating trivial information, which is performed using the memory filter (Step 3.1 in the figure). Fist, one needs to compute a signal modulation <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="2"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>μ</mi></math></mjx-assistive-mml></mjx-container></math-renderer></strong>, for further introducing new experiences in the memory <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="3"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-n"><mjx-c class="mjx-c3A8"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">Ψ</mi></math></mjx-assistive-mml></mjx-container></math-renderer></strong> through the modulating variable <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="4"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>μ</mi></math></mjx-assistive-mml></mjx-container></math-renderer></strong> using a <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="5"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-mtext class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c><mjx-c class="mjx-c1D44E TEX-I"></mjx-c><mjx-c class="mjx-c1D45B TEX-I"></mjx-c><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mtext></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext mathvariant="italic">tanh</mtext></math></mjx-assistive-mml></mjx-container></math-renderer> function (Step 3.2 in the figure).
+            </p>
+          </div>
+          <h2 class="title is-5">Contextual Inference</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              This step is responsible for adding contextual information to BioNeRF. Two new embeddings are generated, i.e., <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="6"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.293em; margin-left: 0px;"><mjx-texatom size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mrow data-mjx-texclass="ORD"><mi>h</mi></mrow><mi mathvariant="normal">Δ</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer></strong> and <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="7"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.247em; margin-left: 0px;"><mjx-texatom size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mrow data-mjx-texclass="ORD"><mi>h</mi></mrow><mi>c</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer></strong> based on density and color filters, respectively (Step 4 in the figure), which further feed two neural models, i.e., <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="8"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.293em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi mathvariant="normal">Δ</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer> and <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="9"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.247em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi>c</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer>. Subsequently, <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="10"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.293em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi mathvariant="normal">Δ</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer> outputs the volume density, while color information is predicted by <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="11"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.247em; margin-left: -0.081em;"><mjx-texatom style="margin-left: 0.191em;" size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi>c</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer>, further used to compute the final predicted pixel information and the loss function.
+            </p>
+          </div>
+          <h2 class="title is-3">Benchmarks</h2>
+            <p dir="auto"><strong>Blender</strong> (synthetic)</p>
+            <table>
+              <thead>
+              <tr>
+              <th></th>
+              <th>drums</th>
+              <th>materials</th>
+              <th>ficus</th>
+              <th>ship</th>
+              <th>mic</th>
+              <th>chair</th>
+              <th>lego</th>
+              <th>hotdog</th>
+              <th>AVG</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>PSNR</td>
+              <td>25.66</td>
+              <td>29.74</td>
+              <td>29.56</td>
+              <td>29.57</td>
+              <td>33.38</td>
+              <td>34.63</td>
+              <td>31.82</td>
+              <td>37.23</td>
+              <td>31.45</td>
+              </tr>
+              <tr>
+              <td>SSIM</td>
+              <td>0.927</td>
+              <td>0.957</td>
+              <td>0.965</td>
+              <td>0.874</td>
+              <td>0.978</td>
+              <td>0.977</td>
+              <td>0.963</td>
+              <td>0.980</td>
+              <td>0.953</td>
+              </tr>
+              <tr>
+              <td>LPIPS</td>
+              <td>0.047</td>
+              <td>0.018</td>
+              <td>0.017</td>
+              <td>0.068</td>
+              <td>0.018</td>
+              <td>0.011</td>
+              <td>0.016</td>
+              <td>0.010</td>
+              <td>0.026</td>
+              </tr>
+              </tbody>
+              </table>
+
+              <img src="static/images/blender.jpeg" alt="Blender images" class="center-image" >
+              <div class="level-set has-text-justified">
+                <p>
+                  Ground-truth (top) and synthetic view (bottom) images generated by BioNeRF regarding four Realistic Blender dataset’s scenes.
+                </p>
+              </div><br>
+              <p dir="auto"><strong>LLFF</strong> (real)</p>
+              <table>
+                <thead>
+                <tr>
+                <th></th>
+                <th>Fern</th>
+                <th>Flower</th>
+                <th>Fortress</th>
+                <th>Horns</th>
+                <th>Leaves</th>
+                <th>Orchids</th>
+                <th>Room</th>
+                <th>T-Rex</th>
+                <th>AVG</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>PSNR</td>
+                <td>25.17</td>
+                <td>27.89</td>
+                <td>32.34</td>
+                <td>27.99</td>
+                <td>22.23</td>
+                <td>20.80</td>
+                <td>30.75</td>
+                <td>27.56</td>
+                <td>27.01</td>
+                </tr>
+                <tr>
+                <td>SSIM</td>
+                <td>0.837</td>
+                <td>0.873</td>
+                <td>0.914</td>
+                <td>0.882</td>
+                <td>0.796</td>
+                <td>0.714</td>
+                <td>0.911</td>
+                <td>0.911</td>
+                <td>0.861</td>
+                </tr>
+                <tr>
+                <td>LPIPS</td>
+                <td>0.093</td>
+                <td>0.055</td>
+                <td>0.025</td>
+                <td>0.070</td>
+                <td>0.103</td>
+                <td>0.122</td>
+                <td>0.029</td>
+                <td>0.044</td>
+                <td>0.068</td>
+                </tr>
+                </tbody>
+                </table>
+                <img src="static/images/llff.jpeg" alt="LLFF images" class="center-image" >
+                <div class="level-set has-text-justified">
+                  <p>
+                    Ground-truth (top) and synthetic view (bottom) images generated by BioNeRF regarding four LLFF dataset’s scenes.
+                  </p>
+                </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{passos2024bionerf,
+        title={BioNeRF: Biologically Plausible Neural Radiance Fields for View Synthesis},
+        author={Passos, Leandro A and Rodrigues, Douglas and Jodas, Danilo and Costa, Kelton AP and Papa, Jo{\~a}o Paulo},
+        journal={arXiv preprint arXiv:2402.07310},
+        year={2024}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
