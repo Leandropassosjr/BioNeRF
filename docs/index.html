@@ -203,6 +203,203 @@
               This step is responsible for adding contextual information to BioNeRF. Two new embeddings are generated, i.e., <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="6"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.293em; margin-left: 0px;"><mjx-texatom size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mrow data-mjx-texclass="ORD"><mi>h</mi></mrow><mi mathvariant="normal">Δ</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer></strong> and <strong><math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="7"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-texatom><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-texatom><mjx-script style="vertical-align: -0.247em; margin-left: 0px;"><mjx-texatom size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mrow data-mjx-texclass="ORD"><mi>h</mi></mrow><mi>c</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer></strong> based on density and color filters, respectively (Step 4 in the figure), which further feed two neural models, i.e., <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="8"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.293em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi mathvariant="normal">Δ</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer> and <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="9"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.247em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi>c</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer>. Subsequently, <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="10"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.293em; margin-left: -0.081em;"><mjx-mi style="margin-left: 0.191em;" size="s" class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi size="s" class="mjx-n"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi mathvariant="normal">Δ</mi><mi data-mjx-alternate="1">′</mi></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer> outputs the volume density, while color information is predicted by <math-renderer class="js-inline-math" style="display: inline" data-static-url="https://github.githubassets.com/static" data-run-id="fd2cd04c0f63bc67162fe482dfa275ac" data-catalyst=""><mjx-container style="position: relative;" jax="CHTML" class="MathJax CtxtMenu_Attached_0" tabindex="0" ctxtmenu_counter="11"><mjx-math aria-hidden="true" class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D440 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.247em; margin-left: -0.081em;"><mjx-texatom style="margin-left: 0.191em;" size="s"><mjx-mi class="mjx-var"><mjx-c class="mjx-c2032"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.328em;"></mjx-spacer><mjx-mi size="s" class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup></mjx-math><mjx-assistive-mml display="inline" unselectable="on"><math xmlns="http://www.w3.org/1998/Math/MathML"><msubsup><mi>M</mi><mi>c</mi><mrow data-mjx-texclass="ORD"><mi data-mjx-alternate="1">′</mi></mrow></msubsup></math></mjx-assistive-mml></mjx-container></math-renderer>, further used to compute the final predicted pixel information and the loss function.
             </p>
           </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Video carousel -->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Blender video samples</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+          <video id="chair" poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/blender/chair.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Chair
+          </h2>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/blender/drums.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Drums
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/ficus.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Ficus
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/hotdog.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Hotdog
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/lego.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Lego
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/materials.mp4"  class="center-image"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Materials
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/mic.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Mic
+          </h2>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/blender/ship.mp4"
+            type="video/mp4" class="center-image">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Ship
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">LLFF video samples</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video id="chair" poster="" id="video1" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/llff/fern.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Fern
+            </h2>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <!-- Your video file here -->
+              <source src="static/videos/llff/flower.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Flower
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/fortress.mp4"
+              type="video/mp4" class="center-image">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Fortress
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/horns.mp4"
+              type="video/mp4" class="center-image">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Horns
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/leaves.mp4"
+              type="video/mp4" class="center-image">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Leaves
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/orchids.mp4"  class="center-image"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Orchids
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/room.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              Room
+            </h2>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+              <!-- Your video file here -->
+              <source src="static/videos/llff/trex.mp4"
+              type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              T-Rex
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<section class="section is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
           <h2 class="title is-3">Benchmarks</h2>
             <p dir="auto"><strong>Blender</strong> (synthetic)</p>
             <table>
@@ -333,9 +530,6 @@
     </div>
   </div>
 </section>
-
-
-
 
 
 
